@@ -6,16 +6,12 @@ package confluence.updatenotifier;
 
 import com.atlassian.confluence.json.parser.JSONObject;
 import com.atlassian.confluence.util.GeneralUtil;
-import com.atlassian.core.util.DateUtils;
-import com.atlassian.plugin.PluginAccessor;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Date;
 import org.joda.time.DateTime;
-import org.joda.time.Interval;
 import org.joda.time.Minutes;
 
 /**

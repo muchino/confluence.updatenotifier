@@ -4,3 +4,7 @@
     border-radius: 0px;
     margin: 0;
 }
+
+.contenteditor  .updatenoitifier-confluence{
+    display: none;
+}
