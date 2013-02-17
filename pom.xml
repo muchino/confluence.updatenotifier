@@ -15,7 +15,7 @@
     <packaging>atlassian-plugin</packaging>
     <name>Update Notifier for Confluence</name>
     <description>Never miss a confluence update. This plugins ads a short notification on top of confluence, if there is a newer confluence version, if you are in the group confluence-administrator.</description>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <organization>
         <name>Oliver Straesser</name>
         <url>https://github.com/muchino/confluence.updatenotifier</url>
