@@ -1,0 +1,25 @@
+<atlassian-plugin key="${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">confluence/updatenotifier/images/plugin-icon.png</param>
+        <param name="plugin-logo">confluence/updatenotifier/images/plugin-logo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="confluence.updatenotifier"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="confluence.updatenotifier-resources" name="confluence.updatenotifier Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="confluence.updatenotifier.css" location="confluence/updatenotifier/css/confluence.updatenotifier.css"/>
+        <context>atl.general</context>
+    </web-resource>
+    
+    <component key="versionManager" alias="versionManager"  name="versionManager" class="confluence.updatenotifier.VersionManager" />
+    
+    <web-panel key="updatenotifier" location="atl.general"  class="confluence.updatenotifier.NotifiyWebPanel" >
+        <condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.ConfluenceAdministratorCondition" />
+    </web-panel>
+</atlassian-plugin>
